@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1040</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>650</width>
+      <height>650</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>180</y>
+      <width>131</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>檔案</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>121</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QPushButton" name="readInput">
+        <property name="text">
+         <string>讀取輸入檔</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="readOutput">
+        <property name="text">
+         <string>讀取輸出檔</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="writeOutput">
+        <property name="text">
+         <string>輸出文字檔</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>20</y>
+      <width>131</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>執行</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>122</width>
+       <height>134</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QPushButton" name="run">
+        <property name="text">
+         <string>執行</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="nextData">
+        <property name="text">
+         <string>下一組資料</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="stepByStep">
+        <property name="text">
+         <string>一步一步執行</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="clear">
+        <property name="text">
+         <string>清空畫面</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>20</y>
+      <width>181</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>添加點</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>161</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>滑鼠位置</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="mousePos">
+        <property name="text">
+         <string>(0,  0 )</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Ｘ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="xValue">
+        <property name="placeholderText">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Ｙ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="yValue">
+        <property name="placeholderText">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="addPoint">
+        <property name="text">
+         <string>添加點</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>數量</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="addPointsSize"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="generPoints">
+        <property name="text">
+         <string>隨機產生</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>300</y>
+      <width>331</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="pointsSize">
+       <property name="text">
+        <string>點資料：0點</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextBrowser" name="pointsData"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="edgesSize">
+       <property name="text">
+        <string>邊資料：0邊</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextBrowser" name="edgesData"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1040</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>檔案</string>
+    </property>
+    <addaction name="actionReadInput"/>
+    <addaction name="actionReadOutput"/>
+    <addaction name="actionWriteOutput"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>執行</string>
+    </property>
+    <addaction name="actionRun"/>
+    <addaction name="actionNextData"/>
+    <addaction name="actionStepByStep"/>
+    <addaction name="actionClear"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>資訊</string>
+    </property>
+    <addaction name="actionInformation"/>
+    <addaction name="actionQtVersion"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionReadInput">
+   <property name="text">
+    <string>讀取輸入檔</string>
+   </property>
+  </action>
+  <action name="actionReadOutput">
+   <property name="text">
+    <string>讀取輸出檔</string>
+   </property>
+  </action>
+  <action name="actionWriteOutput">
+   <property name="text">
+    <string>輸出文字檔</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="text">
+    <string>執行</string>
+   </property>
+  </action>
+  <action name="actionNextData">
+   <property name="text">
+    <string>下一組資料</string>
+   </property>
+  </action>
+  <action name="actionStepByStep">
+   <property name="text">
+    <string>一步一步執行</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="text">
+    <string>清空畫面</string>
+   </property>
+  </action>
+  <action name="actionInformation">
+   <property name="text">
+    <string>軟體資訊</string>
+   </property>
+  </action>
+  <action name="actionQtVersion">
+   <property name="text">
+    <string>Qt版本資訊</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
